@@ -9,7 +9,7 @@ export const AppDataSource = new DataSource({
   password: process.env.DB_PASSWORD || "postgres",
   database: process.env.DB_NAME || "chrono_db",
   synchronize: true,
-  ssl: { rejectUnauthorized: false },
+  ssl: process.env.DB_SSL === "true" ? { rejectUnauthorized: false } : false,
   logging: true,
   entities: [Chrono],
   migrations: [],
