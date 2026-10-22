@@ -31,5 +31,10 @@
     "@types/uuid": "^9.0.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "resolutions": {
+    "tar": "^7.5.22",
+    "sha.js": "^2.4.12",
+    "proxy-addr": "^2.0.8"
   }
 }
